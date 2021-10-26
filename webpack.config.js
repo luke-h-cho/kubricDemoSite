@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -18,23 +18,37 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: [`@babel/preset-react`],
+            presets: ['@babel/preset-env','@babel/preset-react'],
           },
         },
       },
+      {
+				test: /\.(sass|scss|css)$/,
+				use: ['style-loader', 'css-loader', 'sass-loader'],
+			},
     ],
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './index.html',
+      // filename: './index.html',
     }),
-    new CopyPlugin([
-      { from: './src/style.css' },
-    ]),
+    // new CopyWebpackPlugin(
+    //  { 
+    //    patterns: [
+    //   { from: './src/style.css', to: 'dist/style.css' },
+    //   { from: './src/components/app.scss', to: 'dist/style.css' },
+    // ]}),
   ],
   devServer: {
-    contentBase: './dist',
+    static: {
+      directory: path.join(__dirname),
+    }
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+},
   devtool: 'eval-source-map',
 };
