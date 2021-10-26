@@ -16,14 +16,6 @@ module.exports = {
 			directory: path.resolve(__dirname, 'dist'),
 		},
 		port: 8080,
-		proxy: {
-			'/post': 'http://localhost:3000/',
-			'/wasted': 'http://localhost:3000/',
-			'/fridge': 'http://localhost:3000/',
-			'/tasted': 'http://localhost:3000/',
-			'/api': 'http://localhost:3000/',
-			'/user': 'http://localhost:3000/',
-		},
 	},
 	module: {
 		rules: [
