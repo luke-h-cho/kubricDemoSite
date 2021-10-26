@@ -4,11 +4,13 @@ import Demo from './components/Demo.jsx';
 import People from './components/People.jsx';
 import Footer from './components/Footer.jsx';
 import './components/app.scss';
+import '@fortawesome/fontawesome-free/js/all.js'
+import '@fortawesome/fontawesome-free/js/brands.js'
 
 const App = () => {
 
   return (
-    <div>
+    <div id="app">
       <Header/>
       <Demo/>
       <People/>

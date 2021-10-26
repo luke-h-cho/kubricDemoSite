@@ -1,2 +1,5 @@
 #no node modules
 node_modules/
+
+#no dist build folder
+dist/
