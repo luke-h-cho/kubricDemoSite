@@ -1,46 +1,40 @@
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-	mode: process.env.NODE_ENV,
-	entry: {
-		src: './src/index.js',
-	},
-	output: {
-		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/',
-		filename: 'main.js',
-	},
-	devServer: {
-		static: {
-			publicPath: '/',
-			directory: path.resolve(__dirname, 'dist'),
-		},
-		port: 8080,
-		proxy: {
-			'/post': 'http://localhost:3000/',
-			'/wasted': 'http://localhost:3000/',
-			'/fridge': 'http://localhost:3000/',
-			'/tasted': 'http://localhost:3000/',
-			'/api': 'http://localhost:3000/',
-			'/user': 'http://localhost:3000/',
-		},
-	},
-	module: {
-		rules: [
-			{
-				test: /\.jsx?/,
-				exclude: /node_modules/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['@babel/preset-env', '@babel/preset-react'],
-					},
-				},
-			},
-			{
-				test: /\.(sass|scss|css)$/,
-				use: ['style-loader', 'css-loader', 'sass-loader'],
-			},
-		],
-	},
+  mode: process.env.NODE_ENV,
+  entry: './src/app.jsx',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: "/",
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [`@babel/preset-react`],
+          },
+        },
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './src/index.html',
+      filename: './index.html',
+    }),
+    new CopyPlugin([
+      { from: './src/style.css' },
+    ]),
+  ],
+  devServer: {
+    contentBase: './dist',
+  },
+  devtool: 'eval-source-map',
 };

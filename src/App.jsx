@@ -1,14 +1,22 @@
-import React, {useState} from 'react';
+import React, { Component} from 'react';
+import { render } from 'react-dom';
 import Header from './components/Header.jsx';
 
-const App = () => {
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
 
+    };
+  }
+render(){
   return (
     <div>
       <Header/>
     </div>
   )
 }
+}
 
 
-export default App;
+render(<App />, document.querySelector('#root'));

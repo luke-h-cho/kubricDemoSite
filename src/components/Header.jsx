@@ -7,13 +7,11 @@ const Header = (props) => {
         <a href="/"><img src='/'/>Home</a>
       </div>
       <div>
-        <a href="https://github.com/oslabs-beta/kubric"><img src='/'/></a>
+        <a href="https://github.com/oslabs-beta/kubric"><img src='/'/>Github</a>
       </div>
       <div>
-
       </div>
       <div>
-
       </div>
     </div>
   )
