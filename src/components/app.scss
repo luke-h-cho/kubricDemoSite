@@ -4,34 +4,81 @@ html, body {
     height:100%; 
     width:100%;
     font-family: 'Trebuchet MS';
+    font-size:1vw;
+    text-shadow: 2px 2px 4px #000000;
 }
+
+svg {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+
 
 //navbar component styling
 #navbar {
     padding: 0, 5px;
-    height: 50px;
+    min-height: 50px;
+    height: 5vw;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(69,172,120,0.52); 
+    background-image: linear-gradient(to bottom right, rgba(69,172,120,1), rgba(69,172,120,0.25));
     color: white;
+}
+
+#kubric{
+    font-size: 1.5vw;
 }
 
 #right-navbar, #left-navbar {
     display: flex;
     margin: 3%;
+    align-items:center;
+    justify-content: center;
 }
+
 
 #navbar a {
     text-decoration: none;
     color: white;
-    padding: 0.4em;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+}
+
+#navbar path{
+    fill: white;
+}
+
+
+#navbar img{
+    width: 4vw;
+    height: 4vw;
+    padding-top: 0.25em;
+    padding-right: 0.5em
 }
 
 #navbar a:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     transition: 2s ease-in-out all;
+}
+
+//filler component styling
+
+#filler {
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.gifer.com/WOI.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#filler img {
+    height: 20vw;
+    width: 20vw;
 }
 
 //demo component styling
@@ -39,7 +86,9 @@ html, body {
 #demo {
     width: 100%;
     height: 100%;
-    background-color: rgba(149, 209, 179, 0.52); 
+    padding: 2em 1em 0 0;
+    font-size: 2vw;
+    background-image: linear-gradient(to bottom right, rgba(61, 138, 99, .5), rgba(7, 95, 51, .8));
 }
 .logDemo {
     display: flex;
@@ -51,6 +100,8 @@ html, body {
     border-width: 4px;
     border-radius: 4px;
     border-style:groove;
+    width: 30vw;
+    height: 20vw;
 }
 .tabDemo {
     display: flex;
@@ -63,33 +114,37 @@ html, body {
     align-items: center;
 }
 .demoText{
-    width:360px;
-    height:240px;
+    width:30vw;
+    height:20vw;
     display: flex;
     flex-wrap:wrap;
     align-content: center;
     text-align: center;
     color:white;
-    font-size: 20px;
     font-weight: bold;
 }
 
 //people component styling
-#people{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+#people-comp{
+    background-image: linear-gradient(to bottom right, rgba(9, 121, 65, 0.75), rgba(9, 121, 65, 0.1));
+    padding: 1em 0; 
+    text-shadow: 2px 2px 4px white;
 }
 
 #people-comp #title {
     padding-left: 10px;
-    font-size: 20px;
     font-weight: bold;
 }
 
-#people-comp{
-    background-color: rgba(69,172,120,0.2);
-    padding-bottom: 20px; 
+.name {
+    font-weight: bolder;
+}
+
+#people{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #people-comp div {
@@ -112,8 +167,8 @@ html, body {
 
 .person img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 10vw;
 }
 
 #people a {
@@ -132,13 +187,13 @@ html, body {
 #footer {
     display: flex;
     justify-content: flex-start;
-    background-color: rgba(69,172,120,0.52);
+    background-color: rgba(69,172,120,1);
     padding: 1em;
     color: white; 
 }
 
 #footer div {
-    border-right: 1px solid white;
+    border-right: 3px solid white;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
 }
@@ -150,14 +205,16 @@ html, body {
 }
 
 #footer a:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     transition: 2s ease-in-out all;
 }
 
 //go to top of the page piece
 #toNavbar {
-    bottom: 1vh;
-    right: 2vw;
+    bottom: 1.5vw;
+    right: 1.5vw;
+    width: 1vw;
+    height: 1vw;
     position: fixed;
     z-index: 1;
 }
