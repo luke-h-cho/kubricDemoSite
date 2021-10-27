@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
-
+import gif1 from '../assets/KubricLogDemoTest.gif'
 const Demo = (props) => {
   return (
     <div id="demo">
-      {/*
-        bunch of images?
-      */}
+      <img src={gif1}/>
     </div>
   );
 };
