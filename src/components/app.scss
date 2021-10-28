@@ -5,7 +5,7 @@ html, body {
     width:100%;
     font-family: 'Trebuchet MS';
     font-size:1vw;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: .25px .25px .25px #000000;
 }
 
 svg {
@@ -129,7 +129,7 @@ svg {
 #people-comp{
     background-image: linear-gradient(to bottom right, rgba(9, 121, 65, 0.75), rgba(9, 121, 65, 0.1));
     padding: 1em 0; 
-    text-shadow: 2px 2px 4px white;
+    text-shadow: .25px .25px .5px rgba(182, 178, 178, 0.719);
 }
 
 #people-comp #title {
