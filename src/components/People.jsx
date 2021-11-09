@@ -1,4 +1,8 @@
 import React, {useState} from 'react';
+import lukeCho from '../assets/lukeCho.jpg';
+import lauraBotel from '../assets/lauraBotel.jpg';
+import johnHaberstroh from '../assets/johnHaberstroh.jpg';
+import jamesCross from '../assets/jamesCross.jpg';
 
 const People = (props) => {
   return (
@@ -8,7 +12,7 @@ const People = (props) => {
       </div>
       <div id="people">
         <div className="person">
-          <img src="https://media-exp1.licdn.com/dms/image/C4E03AQE9g3iBziidTg/profile-displayphoto-shrink_200_200/0/1610317078397?e=1640822400&v=beta&t=CYk6vzLC5achEsdC_RqcKQJRF0n_Ap0p1kjBXa2LCEk"/>
+          <img src={lauraBotel}/>
           <div className="info">
             <div className="name">Laura Botel</div>
             <div className="description">Fullstack Engineer</div>
@@ -19,7 +23,7 @@ const People = (props) => {
           </div>
         </div>
         <div className="person">
-          <img src="https://media-exp1.licdn.com/dms/image/C5103AQGgwlivDqcUow/profile-displayphoto-shrink_800_800/0/1517590847014?e=1640822400&v=beta&t=Dv9KX9dO5F8j-vpQakfNVNXteUVx2JP1j3440MIx6P8"/>
+          <img src={lukeCho}/>
           <div className="info">
             <div className="name">Luke Cho</div>
             <div className="description">Fullstack Engineer</div>
@@ -30,7 +34,7 @@ const People = (props) => {
           </div>
         </div>
         <div className="person">
-          <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGV_ecwjUmZ8A/profile-displayphoto-shrink_200_200/0/1553466854146?e=1640822400&v=beta&t=Hngt_8-rDqWIedvN7faFKvgQztQazaAFpAnhQesTSpQ"/>
+          <img src={jamesCross}/>
           <div className="info">
             <div className="name">James Cross</div>
             <div className="description">Fullstack Engineer</div>
@@ -41,7 +45,7 @@ const People = (props) => {
           </div>
         </div>
         <div className="person">
-          <img src="https://media-exp1.licdn.com/dms/image/C5603AQEaJ_Zv6GFrsw/profile-displayphoto-shrink_200_200/0/1629841166556?e=1640822400&v=beta&t=89pHnLmWfkErJoYaJIzaJYQ8abf4OG-6kP0lgciRq6A"/>
+          <img src={johnHaberstroh}/>
           <div className="info">
            <div className="name">John Haberstroh</div>
             <div className="description">Fullstack Engineer</div>
