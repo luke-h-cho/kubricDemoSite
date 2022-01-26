@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 import lukeCho from '../assets/lukeCho.jpg';
 import lauraBotel from '../assets/lauraBotel.jpg';
-import johnHaberstroh from '../assets/johnHaberstroh.jpg';
+import johnHaberstroh from '../assets/johnHaberstroh.jpeg';
 import jamesCross from '../assets/jamesCross.jpg';
-
+import bg from '../assets/y-so-serious-dark.png'
 const People = (props) => {
   return (
-    <div id="people-comp">
+    <div id="people-comp" style={{
+      backgroundImage: `linear-gradient(to top left,rgba(50, 116, 109,.8),rgba(206, 224, 220,.1)),url(${bg})`
+    }}>
       <div id="title">
         <div>Meet Our Team</div>
       </div>

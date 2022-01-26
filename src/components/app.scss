@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(206, 224, 220);
   min-height: 100vh;
   font-family: "Helvetica";
   font-size: 1vw;
@@ -18,25 +19,16 @@ svg {
 
 //navbar component styling
 #navbar {
-  padding: 1vw 2vw;
-  min-height: 200px;
+  padding: 1vw 1vw;
+  min-height: 110px;
   height: 5vw;
   width: 100%;
   display: flex;
   align-items: center;
-  border: 1vw solid rgb(37, 103, 69, 0.2);
-  border-radius: 0.25vw;
   justify-content: space-between;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(85, 142, 113),
-    rgba(11, 17, 14, 0.098)
-  );
+  box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw rgba(158, 157, 157, 0.25);
+  font-size: 1.8vw;
   color: white;
-}
-
-#kubric {
-  font-size: 1.5vw;
 }
 
 #right-navbar,
@@ -70,8 +62,8 @@ svg {
 
 #navbar a:hover {
   border-bottom: 2px solid white;
-  background-color: rgb(37, 103, 69, 0.2);
-  border-radius: 0.5vw;
+  background: rgba(50, 116, 109, 0.2);
+  border-radius: 0.1vw;
 }
 
 @keyframes outRot {
@@ -90,14 +82,17 @@ svg {
 #filler {
   display: flex;
   width: 100%;
-  min-height: 600px;
+  min-height: 220px;
   align-items: center;
   justify-content: center;
 }
-
-#filler img {
-  height: 14vw;
-  width: 14vw;
+#filler p {
+  display: flex;
+  margin: 1vw 0vw;
+  font-size: 1.5vw;
+  padding: 2vw 20vw 2vw 20vw;
+  color: white;
+  text-align: center;
 }
 
 //demo component styling
@@ -154,6 +149,7 @@ svg {
     rgba(9, 121, 65, 0.75),
     rgba(9, 121, 65, 0.1)
   );
+  color: white;
   padding: 1em 0;
   text-shadow: 0.25px 0.25px 0.5px rgba(182, 178, 178, 0.719);
 }
@@ -199,7 +195,7 @@ svg {
 
 #people a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 0.5em;
 }
 
@@ -212,16 +208,18 @@ svg {
 
 #footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: rgba(69, 172, 120, 1);
   padding: 1em;
   color: white;
+  text-align: center;
 }
 
 #footer div {
   border-right: 3px solid white;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
+  text-align: center;
 }
 
 #footer a {
@@ -243,4 +241,5 @@ svg {
   height: 1vw;
   position: fixed;
   z-index: 1;
+  color: white;
 }
