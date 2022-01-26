@@ -1,220 +1,246 @@
-html, body {
-    margin:0; 
-    padding:0; 
-    height:100%; 
-    width:100%;
-    font-family: 'Trebuchet MS';
-    font-size:1vw;
-    text-shadow: .25px .25px .25px #000000;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Helvetica";
+  font-size: 1vw;
+  text-shadow: 0.5px 0.5px 2px #000000;
+}
+div {
+  box-sizing: border-box;
 }
 
 svg {
-    width: 1.5vw;
-    height: 1.5vw;
+  width: 1.5vw;
+  height: 1.5vw;
 }
-
-
 
 //navbar component styling
 #navbar {
-    padding: 0, 5px;
-    min-height: 50px;
-    height: 5vw;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(to bottom right, rgb(85, 142, 113), rgba(11, 17, 14, 0.098));
-    color: white;
+  padding: 1vw 2vw;
+  min-height: 200px;
+  height: 5vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1vw solid rgb(37, 103, 69, 0.2);
+  border-radius: 0.25vw;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(85, 142, 113),
+    rgba(11, 17, 14, 0.098)
+  );
+  color: white;
 }
 
-#kubric{
-    font-size: 1.5vw;
+#kubric {
+  font-size: 1.5vw;
 }
 
-#right-navbar, #left-navbar {
-    display: flex;
-    margin: 3%;
-    align-items:center;
-    justify-content: center;
+#right-navbar,
+#left-navbar {
+  display: flex;
+  margin: 3%;
+  align-items: center;
+  justify-content: center;
 }
-
 
 #navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 0.4em 0.4em 0.4em 0.4em;
+  text-decoration: none;
+  color: white;
+  padding: 0.4vw 0.4vw 0.4vw 0.4vw;
 }
 
-#navbar path{
-    fill: white;
+#navbar path {
+  fill: white;
 }
 
-
-#navbar img{
-    width: 4vw;
-    height: 4vw;
-    padding-top: 0.25em;
-    padding-right: 0.5em
+#navbar img {
+  width: 4vw;
+  height: 4vw;
+  padding: 0;
+  animation-name: outRot;
+  transition: 4s 1s ease-in-out all;
+  animation-duration: 10s;
+  animation-iteration-count: 5;
+  padding: 0.4vw 0.4vw 0.4vw 0.4vw;
 }
 
 #navbar a:hover {
-    border-bottom: 2px solid white;
-    transition: 2s ease-in-out all;
+  border-bottom: 2px solid white;
+  background-color: rgb(37, 103, 69, 0.2);
+  border-radius: 0.5vw;
 }
 
+@keyframes outRot {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 //filler component styling
 
 #filler {
-    display: flex;
-    width: 100%;
-    min-height: 600px;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://i.gifer.com/WOI.gif);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+  align-items: center;
+  justify-content: center;
 }
 
 #filler img {
-    height: 14vw;
-    width: 14vw;
+  height: 14vw;
+  width: 14vw;
 }
 
 //demo component styling
 
 #demo {
-    width: 100%;
-    height: 100%;
-    padding: 2em 1em 0 0;
-    font-size: 2vw;
-    background-image: linear-gradient(to bottom right, rgba(61, 138, 99, .5), rgba(7, 95, 51, .8));
+  width: 100%;
+  height: 100%;
+  padding: 2em 1em 0 0;
+  font-size: 2vw;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(61, 138, 99, 0.5),
+    rgba(7, 95, 51, 0.8)
+  );
 }
 .logDemo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-   
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.imgStyle{
-    border-width: 4px;
-    border-radius: 4px;
-    border-style:groove;
-    width: 30vw;
-    height: 20vw;
+.imgStyle {
+  border-width: 4px;
+  border-radius: 4px;
+  border-style: groove;
+  width: 30vw;
+  height: 20vw;
 }
 .tabDemo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .toggleDemo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.demoText{
-    width:30vw;
-    height:20vw;
-    display: flex;
-    flex-wrap:wrap;
-    align-content: center;
-    text-align: center;
-    color:white;
-    font-weight: bold;
+.demoText {
+  width: 30vw;
+  height: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 //people component styling
 
-#people-comp{
-    background-image: linear-gradient(to bottom right, rgba(9, 121, 65, 0.75), rgba(9, 121, 65, 0.1));
-    padding: 1em 0; 
-    text-shadow: .25px .25px .5px rgba(182, 178, 178, 0.719);
+#people-comp {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(9, 121, 65, 0.75),
+    rgba(9, 121, 65, 0.1)
+  );
+  padding: 1em 0;
+  text-shadow: 0.25px 0.25px 0.5px rgba(182, 178, 178, 0.719);
 }
 
 #people-comp #title {
-    padding-left: 10px;
-    font-weight: bold;
+  padding-left: 10px;
+  font-weight: bold;
 }
 
 .name {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
-#people{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+#people {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #people-comp div {
-    padding:0.2em;
+  padding: 0.2em;
 }
 
 .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .person img {
-    border-radius: 50%;
-    width: 10vw;
-    height: 10vw;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
 }
 
 #people a {
-    text-decoration: none;
-    color: black;
-    padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  padding: 0.5em;
 }
 
 #people a:hover {
-    border-bottom: 1px solid black;
-    transition: 2s ease-in-out all;
+  border-bottom: 1px solid black;
+  transition: 2s ease-in-out all;
 }
 
 //footer component styling
 
 #footer {
-    display: flex;
-    justify-content: flex-start;
-    background-color: rgba(69,172,120,1);
-    padding: 1em;
-    color: white; 
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(69, 172, 120, 1);
+  padding: 1em;
+  color: white;
 }
 
 #footer div {
-    border-right: 3px solid white;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+  border-right: 3px solid white;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
 }
 
 #footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 #footer a:hover {
-    border-bottom: 2px solid white;
-    transition: 2s ease-in-out all;
+  border-bottom: 2px solid white;
+  transition: 2s ease-in-out all;
 }
 
 //go to top of the page piece
 #toNavbar {
-    bottom: 1.5vw;
-    right: 1.5vw;
-    width: 1vw;
-    height: 1vw;
-    position: fixed;
-    z-index: 1;
+  bottom: 1.5vw;
+  right: 1.5vw;
+  width: 1vw;
+  height: 1vw;
+  position: fixed;
+  z-index: 1;
 }
