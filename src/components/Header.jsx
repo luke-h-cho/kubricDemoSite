@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import kubric from '../assets/kubric-white-icon-edit.png'
-import bg from '../assets/y-so-serious-white.png'
+import bg from '../assets/y-so-serious-dark.png'
 const Header = (props) => {
 
   return (
     <div id="navbar"style={{
-      backgroundImage: `linear-gradient(to bottom right,rgba(50, 116, 109,.6),rgba(206, 224, 220,.1)),url(${bg})`
+      backgroundImage: `linear-gradient(to top,rgba(255, 255, 255,.2),rgba(206, 224, 220,.4)),url(${bg})`
     }}>
       <div id="right-navbar" >
         <img src={kubric}/>
