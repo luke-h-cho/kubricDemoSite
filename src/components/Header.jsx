@@ -5,7 +5,7 @@ const Header = (props) => {
 
   return (
     <div id="navbar"style={{
-      backgroundImage: `linear-gradient(to top,rgba(255, 255, 255,.2),rgba(206, 224, 220,.4)),url(${bg})`
+      backgroundImage: `linear-gradient(to top,rgba(255, 255, 255,.2),rgba(255, 255, 255,.4)),url(${bg})`
     }}>
       <div id="right-navbar" >
         <img src={kubric}/>

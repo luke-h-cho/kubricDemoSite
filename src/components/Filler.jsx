@@ -5,7 +5,7 @@ import bg from '../assets/y-so-serious-dark.png'
 const Filler = (props) => {
   return (
     <div id="filler" style={{
-      backgroundImage: `linear-gradient(to top,rgba(255, 255, 255 ,.02),rgba(206, 224, 220,.25)),url(${bg})`
+      backgroundImage: `linear-gradient(to top,rgba(255, 255, 255 ,.02),rgba(255, 255, 255 ,.2)),url(${bg})`
     }}>
       <p>What is Kubric?<br/><br/>
       Kubric is a web application that displays key cluster metrics 

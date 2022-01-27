@@ -19,7 +19,7 @@ svg {
 
 //navbar component styling
 #navbar {
-  padding: 1vw 1vw;
+  padding: 1vw 10vw;
   min-height: 110px;
   height: 5vw;
   width: 100%;
@@ -82,15 +82,15 @@ svg {
 #filler {
   display: flex;
   width: 100%;
-  min-height: 220px;
-  align-items: center;
-  justify-content: center;
+  padding: 1vw;
+  min-height: 110px;
+  align-items: flex-start;
 }
 #filler p {
   display: flex;
-  margin: 1vw 0vw;
+  margin: 0vw 0vw;
   font-size: 1.5vw;
-  padding: 2vw 20vw 2vw 20vw;
+  padding: 0vw 20vw;
   color: white;
   text-align: center;
   font-weight: bold;
