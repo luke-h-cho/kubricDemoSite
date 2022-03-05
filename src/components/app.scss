@@ -1,12 +1,15 @@
+
+@import "~bootstrap/scss/bootstrap";
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(206, 224, 220);
+  //background-color: rgb(206, 224, 220);
+  background-color: rgb(62, 180, 137);
   min-height: 100vh;
   font-family: "Helvetica";
   font-size: 1vw;
-  text-shadow: 0.5px 0.5px 2px #000000;
+  //text-shadow: 0.5px 0.5px 2px #000000;
 }
 div {
   box-sizing: border-box;
@@ -19,7 +22,7 @@ svg {
 
 //navbar component styling
 #navbar {
-  padding: 1vw 10vw;
+  padding: 1vw .5vw;
   min-height: 110px;
   height: 5vw;
   width: 100%;
@@ -29,7 +32,11 @@ svg {
   box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw rgba(158, 157, 157, 0.25);
   font-size: 1.8vw;
   color: white;
+  border-bottom: 4px solid rgb(31, 88, 68);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .5vw;
 }
+
 
 #right-navbar,
 #left-navbar {
@@ -54,8 +61,8 @@ svg {
   height: 4vw;
   padding: 0;
   animation-name: outRot;
-  transition: 4s 1s ease-in-out all;
-  animation-duration: 10s;
+  transition: 40s 40s ease-in-out all;
+  animation-duration: 40s;
   animation-iteration-count: infinite;
   padding: 0.4vw 0.4vw 0.4vw 0.4vw;
 }
@@ -78,22 +85,81 @@ svg {
   }
 }
 //filler component styling
-
+#kubric-font{
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.5vw;
+  text-shadow: 0px 0px 0px !important;
+}
 #filler {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 1vw;
-  min-height: 110px;
-  align-items: flex-start;
+  padding: 0vw;
+  align-items: center;
+  background-color: rgb(73, 93, 112);
+  text-shadow: 0.5px 0.5px 2px #000000;
+ 
 }
-#filler p {
+#filler span {
   display: flex;
+  background-color: inherit;
   margin: 0vw 0vw;
-  font-size: 1.5vw;
+  min-height: 20px;
+  width: 100%;
+  justify-content:center;
+  font-size: 2.5vw;
   padding: 0vw 20vw;
-  color: white;
+  color: whitesmoke;
   text-align: center;
   font-weight: bold;
+}
+#filler #headline {
+  padding: 1vw 20vw 0vw 20vw;
+  letter-spacing: .25vw;
+  text-shadow: 0.5px 0.5px 2px #000000;
+  
+}
+#filler svg {
+  width:12vw;
+  height:12vw;
+  padding: 0vw 2vw 2vw 2vw;
+}
+#filler #logsvg {
+  font-size:1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .5vw;
+  padding: 0vw 2vw 0vw 2.5vw;
+  display:flex;
+  color:whitesmoke;
+  flex-direction:column;
+}
+#filler #graphsvg {
+  font-size:1.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .5vw;
+  padding: 0vw 3.25vw 0vw 2vw;
+  display:flex;
+  color:whitesmoke;
+  flex-direction:column;
+}
+
+#filler div {
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+  padding: 0vw 0vw;
+  background-color: inherit;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0px;
+  text-shadow: 0.5px 0.5px 2px #000000;
+}
+#filler em {
+  color: rgb(62, 180, 137);
+  margin: 0vw .25vw;
+  font-style: normal;
+  text-shadow: 0.5px 0.5px 2px rgb(70, 70, 70);
 }
 
 //demo component styling
@@ -101,44 +167,26 @@ svg {
 #demo {
   width: 100%;
   height: 100%;
-  padding: 2em 2em 0 0;
+  padding: 2vw 2vw 2vw 2vw;
   font-size: 1.5vw;
-  box-shadow: inset 0vw 1vw 0.5vw 0vw rgb(158, 157, 157, 0.25);
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
 }
-.logDemo {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+#demo #carouselHolder{
+  
+  width: 60vw;
 }
+
 .imgStyle {
   border-width: 4px;
   border-radius: 4px;
   border-style: groove;
-  width: 30vw;
-  height: 20vw;
+  width: 60vw;
+  height: 30vw;
   box-shadow: 0vw 1vw 0.5vw 0vw rgba(158, 157, 157, 0.25);
 }
-.tabDemo {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.toggleDemo {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.demoText {
-  width: 30vw;
-  height: 20vw;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0vw 1vw 0.5vw 0vw rgba(158, 157, 157, 0.25);
-}
+
 
 //people component styling
 
@@ -208,7 +256,7 @@ svg {
 #footer {
   display: flex;
   justify-content: center;
-  background-color: rgba(69, 172, 120, 1);
+  background-color: rgb(62, 180, 137);
   padding: 1em;
   color: white;
   text-align: center;
