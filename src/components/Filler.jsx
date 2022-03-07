@@ -16,9 +16,9 @@ const Filler = (props) => {
       <GraphSVG/>
       
       </div>
-      <span style={{
+      {/* <span style={{
       backgroundImage: `url(${bg})`
-    }}></span>
+    }}></span> */}
     </div>
   )
 }

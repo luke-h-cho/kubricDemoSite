@@ -8,13 +8,14 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const Demo = (props) => {
   const styleOverride = {
-    firstSlide:{
-      color:'black'
-    },
-    otherSlides:{
+    slides:{
       fontSize:'1.5vw',
       fontFamily: 'Arial, Helvetica, sans-serif',
-      fontWeight:'bold'
+      fontWeight:'bold',
+      backgroundColor: 'rgba(73, 93, 112,.5)',
+      padding:'.25vw',
+      minWidth:'40vw',
+      borderRadius: '.5vw'
     }
 
    
@@ -28,20 +29,20 @@ const Demo = (props) => {
   />
     <Carousel.Caption 
 >
-      <h3 style={{...styleOverride.otherSlides,...styleOverride.firstSlide,}}>Query Persistent Log Storage by Index Name, Field and Value.</h3>
+      <h3 style={styleOverride.slides}>Query Log Storage by Index Name, Field and Value.</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item >
   <img className="imgStyle" src={kubricDemoNodeToggle}/>
     <Carousel.Caption>
-      <h3 style={styleOverride.otherSlides}>Toggle Visualization to view relative performance.</h3>
+      <h3 style={styleOverride.slides}>Toggle Visualization to view relative performance.</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item >
   <img className="imgStyle" src={kubricTabToggleDemo}/>
 
     <Carousel.Caption>
-      <h3 style={styleOverride.otherSlides}>Tab between Overview, Master and Worker Node views.</h3>
+      <h3 style={styleOverride.slides}>Tab between Overview, Master and Worker Node views.</h3>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

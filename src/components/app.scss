@@ -4,12 +4,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //background-color: rgb(206, 224, 220);
   background-color: rgb(62, 180, 137);
   min-height: 100vh;
   font-family: "Helvetica";
   font-size: 1vw;
-  //text-shadow: 0.5px 0.5px 2px #000000;
 }
 div {
   box-sizing: border-box;
@@ -191,19 +189,20 @@ svg {
 //people component styling
 
 #people-comp {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(9, 121, 65, 0.75),
-    rgba(9, 121, 65, 0.1)
-  );
   color: white;
   padding: 1em 0;
   text-shadow: 0.25px 0.25px 0.5px rgba(182, 178, 178, 0.719);
 }
 
 #people-comp #title {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 10px;
-  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing:.25vw;
+  padding:0vw;
+  //font-weight: bold;
 }
 
 .name {
@@ -214,6 +213,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  //background-color:rgb(62, 180, 137);
 }
 
 #people-comp div {
@@ -225,6 +225,9 @@ svg {
   flex-direction: column;
   align-items: center;
   justify-content: space;
+  color:white;
+  padding: 1vw 1vw !important;
+  border-radius: .5vw;
 }
 
 .info {
@@ -250,13 +253,15 @@ svg {
   border-bottom: 1px solid black;
   transition: 2s ease-in-out all;
 }
-
+#people path {
+  fill: white;
+}
 //footer component styling
 
 #footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(62, 180, 137);
+  background-color: rgb(73, 93, 112);
   padding: 1em;
   color: white;
   text-align: center;
@@ -278,6 +283,10 @@ svg {
 #footer a:hover {
   border-bottom: 2px solid white;
   transition: 2s ease-in-out all;
+}
+#footer em {
+  color: rgb(62, 180, 137);
+  font-style: normal;
 }
 
 //go to top of the page piece
