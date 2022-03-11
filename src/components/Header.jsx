@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import kubric from '../assets/kubric-white-icon-edit.png'
-import bg from '../assets/y-so-serious-dark.png'
 const Header = (props) => {
 
   return (

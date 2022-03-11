@@ -1,13 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import lukeCho from '../assets/lukeCho.jpg';
 import lauraBotel from '../assets/lauraBotel.jpg';
 import johnHaberstroh from '../assets/johnHaberstroh.jpeg';
 import jamesCross from '../assets/jamesCross.jpg';
-import bg from '../assets/y-so-serious-dark.png'
 const People = (props) => {
   return (
-    <div id="people-comp" 
-    style={{backgroundImage:`url(${bg})`}}
+    <div id="people-comp"
     >
       <div id="title">
         <div>TEAM</div>

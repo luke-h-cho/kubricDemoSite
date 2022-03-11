@@ -21,7 +21,7 @@ const Demo = (props) => {
    
   }
   return (
-    <div id="demo" style={{backgroundImage: `url(${bg})`}} >
+    <div id="demo">
       <div id="carouselHolder">
       <Carousel>
   <Carousel.Item >

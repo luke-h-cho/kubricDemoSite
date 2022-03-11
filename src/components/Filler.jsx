@@ -1,7 +1,4 @@
-import React, {Text,useState} from 'react';
-import kubric from '../assets/kubric-colored-skeleton.png'
-import bg from '../assets/y-so-serious-dark.png'
-import lightbg from '../assets/y-so-serious-white.png'
+import React from 'react';
 import LogSVG from './LogSVG.jsx'
 import GraphSVG from './GraphSVG.jsx'
 const Filler = (props) => {
@@ -16,9 +13,6 @@ const Filler = (props) => {
       <GraphSVG/>
       
       </div>
-      {/* <span style={{
-      backgroundImage: `url(${bg})`
-    }}></span> */}
     </div>
   )
 }

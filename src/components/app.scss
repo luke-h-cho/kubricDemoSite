@@ -1,5 +1,6 @@
 
 @import "~bootstrap/scss/bootstrap";
+
 body {
   margin: 0;
   padding: 0;
@@ -170,6 +171,7 @@ svg {
   display:flex;
   align-items:center;
   justify-content:space-around;
+  background: url('http://localhost:8080/f95c10083cde9e7f42494ec3ba54fbdf.png');
 }
 #demo #carouselHolder{
   
@@ -192,6 +194,7 @@ svg {
   color: white;
   padding: 1em 0;
   text-shadow: 0.25px 0.25px 0.5px rgba(182, 178, 178, 0.719);
+  background: url('http://localhost:8080/a9a4ed92b15020fbe84ad7baf3766ef1.png');
 }
 
 #people-comp #title {
@@ -202,19 +205,18 @@ svg {
   font-size: 2vw;
   letter-spacing:.25vw;
   padding:0vw;
-  //font-weight: bold;
+  
 }
-
-.name {
-  font-weight: bolder;
-}
-
 #people {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  //background-color:rgb(62, 180, 137);
 }
+.name {
+  font-weight: bolder;
+}
+
+
 
 #people-comp div {
   padding: 0.2em;

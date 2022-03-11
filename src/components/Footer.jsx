@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import bg from '../assets/y-so-serious-dark.png'
+import React from 'react';
 const Footer = (props) => {
   return (
     <div id="footer">
