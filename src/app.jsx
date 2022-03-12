@@ -5,7 +5,7 @@ import Filler from './components/Filler.jsx';
 import Demo from './components/Demo.jsx';
 import People from './components/People.jsx';
 import Footer from './components/Footer.jsx';
-import './components/app.scss';
+import './assets/app.scss';
 
 class App extends React.Component {
   constructor(props){

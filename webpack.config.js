@@ -28,11 +28,7 @@ module.exports = {
 			},
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        type: 'asset/resource',
       },
     ],
   },
@@ -51,5 +47,5 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000
 },
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
 };
