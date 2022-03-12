@@ -3,9 +3,8 @@ import kubric from '../assets/kubric-white-icon-edit.png'
 const Header = (props) => {
 
   return (
-    <div id="navbar"style={{
-   
-    }}>
+    <div id="nav-bg">
+    <div id="navbar">
       <div id="right-navbar" >
         <img src={kubric}/>
           <span id="kubric-font">KUBRIC</span> 
@@ -20,6 +19,7 @@ const Header = (props) => {
         </div>
        
       </div>
+    </div>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import johnHaberstroh from '../assets/johnHaberstroh.jpeg';
 import jamesCross from '../assets/jamesCross.jpg';
 const People = (props) => {
   return (
+    <div id="people-bg">
     <div id="people-comp"
     >
       <div id="title">
@@ -56,6 +57,7 @@ const People = (props) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

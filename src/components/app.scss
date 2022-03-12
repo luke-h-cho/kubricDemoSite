@@ -5,10 +5,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(62, 180, 137);
   min-height: 100vh;
   font-family: "Helvetica";
   font-size: 1vw;
+ 
 }
 div {
   box-sizing: border-box;
@@ -18,9 +18,16 @@ svg {
   width: 1.5vw;
   height: 1.5vw;
 }
-
+#nav-bg{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(62, 180, 137);
+  border-bottom: 4px solid rgb(31, 88, 68);
+  width:100%
+}
 //navbar component styling
 #navbar {
+ 
   padding: 1vw .5vw;
   min-height: 110px;
   height: 5vw;
@@ -28,10 +35,8 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0.1vw 0.1vw 0.2vw 0.2vw rgba(158, 157, 157, 0.25);
   font-size: 1.8vw;
   color: white;
-  border-bottom: 4px solid rgb(31, 88, 68);
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: .5vw;
 }
@@ -89,13 +94,19 @@ svg {
   letter-spacing: 1.5vw;
   text-shadow: 0px 0px 0px !important;
 }
+#fill-bg{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(73, 93, 112);
+  width:100%;
+  border-bottom: 4px solid rgb(34, 40, 38);
+}
 #filler {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0vw;
   align-items: center;
-  background-color: rgb(73, 93, 112);
   text-shadow: 0.5px 0.5px 2px #000000;
  
 }
@@ -162,7 +173,12 @@ svg {
 }
 
 //demo component styling
-
+#demo-bg{
+  display: flex;
+  justify-content: center;
+  background: url('http://kubric.org/f95c10083cde9e7f42494ec3ba54fbdf.png');
+  width:100%
+}
 #demo {
   width: 100%;
   height: 100%;
@@ -171,11 +187,25 @@ svg {
   display:flex;
   align-items:center;
   justify-content:space-around;
-  background: url('http://localhost:8080/f95c10083cde9e7f42494ec3ba54fbdf.png');
+  
 }
 #demo #carouselHolder{
   
   width: 60vw;
+}
+.carousel-caption{
+ display:flex;
+ justify-content:center;
+
+  }
+#carousel-text{
+font-size:1.5vw;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+background-color: rgba(73, 93, 112,.5);
+padding: .25vw;
+min-width: 40vw;
+border-radius: .5vw;
 }
 
 .imgStyle {
@@ -189,12 +219,16 @@ svg {
 
 
 //people component styling
-
+#people-bg{
+  display: flex;
+  justify-content: center;
+  background: url('http://kubric.org/a9a4ed92b15020fbe84ad7baf3766ef1.png');
+  width:100%
+}
 #people-comp {
   color: white;
   padding: 1em 0;
   text-shadow: 0.25px 0.25px 0.5px rgba(182, 178, 178, 0.719);
-  background: url('http://localhost:8080/a9a4ed92b15020fbe84ad7baf3766ef1.png');
 }
 
 #people-comp #title {
@@ -219,7 +253,7 @@ svg {
 
 
 #people-comp div {
-  padding: 0.2em;
+  padding: 0.2vw;
 }
 
 .person {
@@ -248,7 +282,7 @@ svg {
 #people a {
   text-decoration: none;
   color: white;
-  padding: 0.5em;
+  padding: 0.5vw;
 }
 
 #people a:hover {
@@ -259,12 +293,16 @@ svg {
   fill: white;
 }
 //footer component styling
-
+#foot-bg{
+  background-color: rgb(73, 93, 112);
+  display: flex;
+  justify-content: center;
+  width:100%
+}
 #footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(73, 93, 112);
-  padding: 1em;
+  padding: 1vw;
   color: white;
   text-align: center;
 }
@@ -300,4 +338,154 @@ svg {
   position: fixed;
   z-index: 1;
   color: white;
+}
+@media screen and (min-width: 1296px) {
+  $vw: 12.96px;
+  body {
+    font-size: 1*$vw;
+    background: whitesmoke;
+  }
+ 
+  svg {
+    width: 1.5*$vw;
+    height: 1.5*$vw;
+  }
+  
+  
+  #navbar {
+    padding: 1*$vw .5*$vw;
+    height: 5*$vw;
+    font-size: 1.8*$vw;
+    letter-spacing: .5*$vw;
+    max-width: 1296px;
+  }
+  
+  #navbar a {
+    padding: 0.4*$vw 0.4*$vw 0.4*$vw 0.4*$vw;
+  }
+
+  #navbar img {
+    width: 4*$vw;
+    height: 4*$vw;
+    padding: 0.4*$vw 0.4*$vw 0.4*$vw 0.4*$vw;
+  }
+  
+  #navbar a:hover {
+    border-radius: 0.1*$vw;
+  }
+  
+  //filler component styling
+  #kubric-font{
+    letter-spacing: 1.5*$vw;
+  }
+  #filler {
+    padding: 0*$vw;
+    max-width: 1296px;
+  }
+  #filler span {
+    margin: 0*$vw 0*$vw;
+    font-size: 2.5*$vw;
+    padding: 0*$vw 20*$vw;
+  }
+  #filler #headline {
+    padding: 1*$vw 20*$vw 0*$vw 20*$vw;
+    letter-spacing: .25*$vw;
+  }
+  #filler svg {
+    width:12*$vw;
+    height:12*$vw;
+    padding: 0*$vw 2*$vw 2*$vw 2*$vw;
+  }
+  #filler #logsvg {
+    font-size:1.5*$vw;
+    letter-spacing: .5*$vw;
+    padding: 0*$vw 2*$vw 0*$vw 2.5*$vw;
+  }
+  #filler #graphsvg {
+    font-size:1.5*$vw;
+    letter-spacing: .5*$vw;
+    padding: 0*$vw 3.25*$vw 0*$vw 2*$vw;
+  }
+  
+  #filler div {
+    font-size: 2*$vw;
+    padding: 0*$vw 0*$vw;
+  }
+  #filler em {
+    margin: 0*$vw .25*$vw;
+  }
+  
+  //demo component styling
+  
+  #demo {
+    padding: 2*$vw 2*$vw 2*$vw 2*$vw;
+    font-size: 1.5*$vw;
+    max-width: 1296px;
+  }
+  #demo #carouselHolder{
+    width: 60*$vw;
+  }
+  #carousel-text{
+  font-size:1.5*$vw;
+  padding: .25*$vw;
+  min-width: 40*$vw;
+  border-radius: .5*$vw;
+}
+  .imgStyle {
+    width: 60*$vw;
+    height: 30*$vw;
+    box-shadow: 0*$vw 1*$vw 0.5*$vw 0*$vw rgba(158, 157, 157, 0.25);
+  }
+  
+  
+  //people component styling
+  #people-comp{
+    max-width: 1296px;
+  }
+  #people-comp #title {
+    font-size: 2*$vw;
+    letter-spacing:.25*$vw;
+    padding:0*$vw;
+    
+  }
+  
+  #people-comp div {
+    padding: 0.2*$vw;
+  }
+  
+  .person {
+    padding: 1*$vw 1*$vw !important;
+    border-radius: .5*$vw;
+  }
+  
+  
+  .person img {
+    width: 10*$vw;
+    height: 10*$vw;
+  }
+  
+  #people a {
+    padding: 0.5*$vw;
+  }
+  
+  //footer component styling
+  
+  #footer {
+    padding: 1*$vw;
+    max-width: 1296px;
+  }
+  
+  #footer div {
+    padding-left: 0.5*$vw;
+    padding-right: 0.5*$vw;
+  }
+  
+  //go to top of the page piece
+  #toNavbar {
+    bottom: 1.5*$vw;
+    right: 1.5*$vw;
+    width: 1*$vw;
+    height: 1*$vw;
+  }
+  
 }
