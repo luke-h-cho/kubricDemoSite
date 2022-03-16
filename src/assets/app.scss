@@ -142,6 +142,11 @@ svg {
   color:whitesmoke;
   flex-direction:column;
 }
+#filler p {
+  position:relative;
+  left: .25vw
+  
+}
 #filler #graphsvg {
   font-size:1.5vw;
   font-family: Arial, Helvetica, sans-serif;
@@ -166,9 +171,9 @@ svg {
 }
 #filler em {
   color: rgb(62, 180, 137);
-  margin: 0vw .25vw;
-  font-style: normal;
+  margin: 0vw 0.25vw;
   text-shadow: 0.5px 0.5px 2px rgb(70, 70, 70);
+  font-style:normal;
 }
 
 //demo component styling
@@ -413,7 +418,11 @@ border-radius: .5vw;
   #filler em {
     margin: 0*$vw .25*$vw;
   }
-  
+  #filler p {
+    position:relative;
+    left: .25*$vw
+    
+  }
   //demo component styling
   
   #demo {
